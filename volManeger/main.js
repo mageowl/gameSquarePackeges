@@ -16,6 +16,8 @@ var VolManeger = {
         updateVol() {
             this.vX *= this.friction
             this.vY *= this.friction
+            this.renderObject.x += this.vX
+            this.renderObject.y += this.vY
         }
     },
     
